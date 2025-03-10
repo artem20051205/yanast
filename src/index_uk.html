@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manicure Services</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+<body>
+    <header class="fade-in">
+        <h1 id="welcome">Ласкаво просимо до наших манікюрних послуг</h1>
+        <div id="language-buttons">
+            <a href="index_uk.html">
+                <span class="flag-icon flag-icon-ua"></span>
+            </a>
+            <a href="index_en.html">
+                <span class="flag-icon flag-icon-gb"></span>
+            </a>
+            <a href="index_nl.html">
+                <span class="flag-icon flag-icon-nl"></span>
+            </a>
+        </div>
+    </header>
+    
+    <section id="services" class="fade-in-up">
+        <h2 id="services-title">Наші послуги</h2>
+        <p id="services-description">Ми пропонуємо різноманітні манікюрні послуги, щоб задовольнити ваші потреби.</p>
+        <ul>
+            <li>Класичний манікюр</li>
+            <li>Гелевий манікюр</li>
+            <li>Нейл-арт</li>
+            <li>Педикюр</li>
+        </ul>
+    </section>
+    
+    <section id="master" class="fade-in-up">
+        <h2 id="master-title">Інформація про майстра</h2>
+        <div class="master-info">
+            <img src="assets/images/master.png" alt="Master Photo">
+            <div class="master-details">
+                <h3 id="master-name">Ім'я Майстра</h3>
+                <p id="master-description">Майстер з багаторічним досвідом у сфері манікюру. Спеціалізується на класичному та гелевому манікюрі, а також на нейл-арті.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery" class="fade-in-up">
+        <h2 id="gallery-title">Галерея робіт</h2>
+        <div class="gallery-carousel">
+            <div><img src="assets/images/work1.jpg" alt="Work 1"></div>
+            <div><img src="assets/images/work2.jpg" alt="Work 2"></div>
+            <div><img src="assets/images/work3.jpg" alt="Work 3"></div>
+            <div><img src="assets/images/work4.jpg" alt="Work 4"></div>
+        </div>
+    </section>
+    
+    <section id="contact" class="fade-in-up">
+        <h2 id="contact-title">Зв'яжіться з нами</h2>
+        <div id="contact-links">
+            <a href="https://t.me/MRartemkaa" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="viber://chat?number=%2B380931270315" target="_blank">
+                <i class="fab fa-viber"></i>
+            </a>
+            <a href="https://wa.me/+380931270315" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p id="footer-text">&copy; 2023 Манікюрні послуги. Всі права захищені.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gallery-carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true
+            });
+        });
+    </script>
+</body>
+</html>
