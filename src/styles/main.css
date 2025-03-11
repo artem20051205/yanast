@@ -11,7 +11,7 @@ header {
     padding: 20px 0;
     text-align: center;
     animation: fadeIn 2s ease-in-out;
-    background: linear-gradient(270deg, #ff69b4, #ffb6c1, #ff69b4, #ffb6c1);
+    background: linear-gradient(270deg, #ff9a9d, #ffae62, #ff8c5a,);
     background-size: 800% 800%;
     animation: gradientAnimation 20s ease infinite;
 }

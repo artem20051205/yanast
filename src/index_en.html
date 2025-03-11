@@ -9,10 +9,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            background-size: 400% 400%;
+            animation: gradientAnimation 120s ease-in-out infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            }
+            25% {
+                background: linear-gradient(135deg, #f5d5e0, #b5c6ec);
+            }
+            50% {
+                background: linear-gradient(135deg, #e3eecf, #b6d4b2);
+            }
+            75% {
+                background: linear-gradient(135deg, #d0e5f2, #adcceb);
+            }
+            100% {
+                background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            }
+                    section {
+            margin: 20px;
+            padding: 20px;
+        }
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header class="fade-in">
-        <h1 id="welcome">Welcome to Our Manicure Services</h1>
+        <h1 id="welcome">Welcome to My Manicure Services</h1>
         <div id="language-buttons">
             <a href="index_uk.html">
                 <span class="flag-icon flag-icon-ua"></span>
@@ -27,7 +60,7 @@
     </header>
     
     <section id="services" class="fade-in-up">
-        <h2 id="services-title">Our Services</h2>
+        <h2 id="services-title">My Services</h2>
         <p id="services-description">We offer a variety of manicure services to suit your needs.</p>
         <ul>
             <li>Classic Manicure</li>
