@@ -63,4 +63,39 @@ $(document).ready(function(){
             }
         ]
     });
+
+    // Testimonials Carousel
+    $('.testimonials-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+});
+
+// Dark Theme Toggle
+function toggleDarkTheme() {
+    document.body.setAttribute('data-theme', 
+        document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+}
+
+// Progress Bar
+window.addEventListener('scroll', () => {
+    const winScroll = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.querySelector('.progress-bar').style.width = scrolled + '%';
+});
+
+// FAQ Accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});
+
+// Float Contact Button
+document.querySelector('.float-contact').addEventListener('click', () => {
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
 });
